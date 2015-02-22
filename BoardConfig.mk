@@ -20,14 +20,11 @@
 # definition file).
 #
 
-# inherit from common JF
--include device/samsung/jf-common/BoardConfigCommon.mk
+# inherit from common jf
+include device/samsung/jf-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/jfltei337/BoardConfigVendor.mk
+-include vendor/samsung/jf-gsm-common/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := jfltecan
-
-# Kernel
-TARGET_KERNEL_CONFIG         := jf_can_defconfig
+TARGET_OTA_ASSERT_DEVICE := jfltecan,jflte
